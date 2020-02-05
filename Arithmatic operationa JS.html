@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>arithmaticex</title>
+<style>
+h1
+{
+margin-left:500px;
+font-size:20px;
+}
+input{
+margin-left:500px;
+}
+.main{
+margin-left:500px;
+
+}
+#res{
+display:none;
+border:2px solid black;
+height:20px;
+width:150px;
+margin-left:500px;
+}
+h2{
+margin-left:500px;
+}
+button{
+background-color:#00ace6;
+color:white;
+}
+</style>
+</head>
+<body>
+<h1>Arithmatic oprations</h1>
+<input type="number" id="num"><br><br>
+<input type="number" id="num2"><br><br>
+
+<div class="main">
+<button onclick="Add()">Add</button>
+<button onclick="Sub()">Sub</button>
+<button onclick="Multi()">Multi</button>
+<button onclick="Divi()">Divi</button>
+</div>
+<h2>result:</h2>
+<div id="res">
+<label id="result"></label>
+</div>
+<script>
+function Add(){
+var n=parseInt(document.getElementById("num").value);
+var m=parseInt(document.getElementById("num2").value);
+var pow=n+m;
+document.getElementById("res").style.display='block';
+document.getElementById("result").innerHTML+=pow;
+}
+function Sub(){
+var n=parseInt(document.getElementById("num").value);
+var m=parseInt(document.getElementById("num2").value);
+var pow=n-m;
+document.getElementById("res").style.display='block';
+document.getElementById("result").innerHTML+=pow;
+}
+function Multi(){
+var n=parseInt(document.getElementById("num").value);
+var m=parseInt(document.getElementById("num2").value);
+var pow=n*m;
+document.getElementById("res").style.display='block';
+document.getElementById("result").innerHTML+=pow;
+}
+function Divi(){
+var n=parseInt(document.getElementById("num").value);
+var m=parseInt(document.getElementById("num2").value);
+var pow=n/m;
+document.getElementById("res").style.display='block';
+document.getElementById("result").innerHTML+=pow;
+}
+</script>
+
+</body>
+</html>
